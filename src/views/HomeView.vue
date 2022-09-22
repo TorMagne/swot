@@ -109,10 +109,11 @@ export default {
     },
 
     handleClick(inputId, inputMessage) {
-      console.log(inputId, inputMessage);
-      let newObj = { newEntry: inputMessage };
-      this.newArray[inputId].value.push(newObj);
-      this.newArray[inputId].inputValue = "";
+      if (inputMessage) {
+        let newObj = { newEntry: inputMessage };
+        this.newArray[inputId].value.push(newObj);
+        this.newArray[inputId].inputValue = "";
+      }
     },
     removeItem(inputId, itemIndex) {
       this.newArray[inputId].value.splice(itemIndex, 1);
