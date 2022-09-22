@@ -91,7 +91,7 @@ export default {
           value: [],
         },
         {
-          title: "Oppertunities",
+          title: "Opportunities",
           id: 2,
           color: "bg-blue-400",
           inputValue: "",
